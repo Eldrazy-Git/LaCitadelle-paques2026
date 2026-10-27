@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "nom": "LaCitadelle-paques2026",
+  "description": "Galerie photo de l'évent Pâques 2025 (La Citadelle)",
+  "type": "html",
+  "tags": [],
+  "favori": false,
+  "point_entree": "index.html",
+  "ouvrir_avec": "vscode",
+  "actions": [],
+  "outils_lies": []
+}
