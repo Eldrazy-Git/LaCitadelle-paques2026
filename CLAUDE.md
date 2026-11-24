@@ -55,9 +55,11 @@ publique pour la page.
 ## Pièges
 
 - `GITHUB_REPO` vaut `"LaCitadelle-paque2026"` (sans « s ») alors que le dépôt s'appelle
-  `LaCitadelle-paques2026`. Non vérifié : ça ne marche que si GitHub redirige un ancien nom.
-  Si la galerie affiche « La galerie attend vos aventures », c'est la première chose à
-  regarder (une erreur 404 de l'API s'affiche comme une galerie vide, pas comme une erreur).
+  `LaCitadelle-paques2026`. La galerie s'affiche bien (vérifié par l'utilisateur le
+  2026-11-24) : GitHub redirige sans doute cet ancien nom. Si le dépôt est de nouveau renommé
+  ou si un autre dépôt prend l'ancien nom, la redirection casse : mettre alors le vrai nom.
+  Une erreur 404 de l'API s'affiche comme une galerie vide (« La galerie attend vos
+  aventures »), pas comme une erreur.
 - API GitHub sans jeton : 60 requêtes par heure par adresse IP, et au plus 1 000 fichiers
   listés par dossier.
 - Les PNG sont bruts (jusqu'à 17 Mo chacun, `images/` ≈ 1,1 Go ; dépôt ≈ 1,06 Go). Pas de
